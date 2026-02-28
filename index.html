@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sodiq Power Tech Search Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #35424a;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sodiq Power Tech Search Engine</h1>
+    </header>
+    <div>
+        <input type="text" id="searchQuery" placeholder="Search...">
+        <button onclick="searchFunction()">Search</button>
+    </div>
+    <script>
+        function searchFunction() {
+            const query = document.getElementById('searchQuery').value;
+            alert('You searched for: ' + query);
+            // Implement search logic here
+        }
+    </script>
+</body>
+</html>
